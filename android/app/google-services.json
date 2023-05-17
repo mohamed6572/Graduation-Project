@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "684305427237",
+    "project_id": "gradution-project-b1166",
+    "storage_bucket": "gradution-project-b1166.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684305427237:android:756b776234261d37b108cc",
+        "android_client_info": {
+          "package_name": "com.example.faz3a_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684305427237-ol3t6bteiu2cknebdie97qqkib0d8141.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faz3a_application",
+            "certificate_hash": "9822b3b82dffa7bf8753218bfcf9c88b4019285f"
+          }
+        },
+        {
+          "client_id": "684305427237-dtost794f75ni35432dl52on1i914dph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7QSIpQT9Tq-O3rqmTNcqAqVQVp7tWv04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684305427237-dtost794f75ni35432dl52on1i914dph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

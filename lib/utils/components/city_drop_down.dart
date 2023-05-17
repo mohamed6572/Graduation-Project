@@ -8,7 +8,7 @@ import '../app_colors.dart';
 class CityDropDown extends StatefulWidget {
   final ValueChanged<String> onChange;
   final validator;
-  const CityDropDown({Key? key,required this.onChange,required this.validator}) : super(key: key);
+   CityDropDown({Key? key,required this.onChange,required this.validator}) : super(key: key);
 
   @override
   State<CityDropDown> createState() => _CityDropDownState();
@@ -31,7 +31,7 @@ class _CityDropDownState extends State<CityDropDown> {
 
   ];
 
-  String? selectedValue = null;
+  String? selectedValu = null;
   final _dropdownFormKey = GlobalKey<FormState>();
 
   @override
@@ -68,12 +68,12 @@ class _CityDropDownState extends State<CityDropDown> {
           validator: widget.validator,
           dropdownColor: AppColors().primaryColor,
 
-          value: selectedValue,
+          value: selectedValu,
           onChanged: (String? newValue) {
             setState(() {
               onChanged: (value) {
                 setState(() {
-                  selectedValue = value as String;
+selectedValu = value as String;
                   widget.onChange.call(value);
                 });
               };

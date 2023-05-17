@@ -11,7 +11,8 @@ import 'package:sizer/sizer.dart';
 
 class AdminLogin extends StatelessWidget {
   AdminLogin({Key? key}) : super(key: key);
-
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -62,7 +63,7 @@ class AdminLogin extends StatelessWidget {
                               child: CusTextField(
                                 labelText: "Email Address",
                                 isPassword: false,
-                                onChanged: () {},
+                              inputController: emailController,
                                 validator: (text) {
                                   if (text == null || text.isEmpty) {
                                     return 'Please enter some text';
@@ -82,6 +83,7 @@ class AdminLogin extends StatelessWidget {
                               delay: 1.5,
                               child: CusTextField(
                                 labelText: "Password",
+                                inputController: passwordController,
                                 isPassword: true,
                                 validator: (text) {
                                   if (text == null || text.isEmpty) {

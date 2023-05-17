@@ -2,10 +2,11 @@ import 'package:faz3a_application/utils/app_colors.dart';
 import 'package:faz3a_application/views/contact_us.dart';
 import 'package:faz3a_application/views/customer/cutomer_orders.dart';
 import 'package:faz3a_application/views/customer/home_page.dart';
-import 'package:faz3a_application/views/profile_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
+
+import '../../../views/customer/profile_page.dart';
 
 
 class CusBottomNavigationBar extends StatefulWidget {

@@ -20,13 +20,15 @@ class PlumberPage extends StatelessWidget {
               Text('Workers List',style: TextStyle(fontWeight: FontWeight.bold,color: AppColors().primaryColor,fontSize: 26.5.sp),)
             ,SizedBox(height: 3.h,),  Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-            WorkerInfo( name: 'Issa Ali', service: 'plumber', location: 'Amman', rating: 4.5,onTap: (){
-              Navigator.of(context).push(
-                  MaterialPageRoute(
-                      builder: (context) =>BookingPage()
-                  ));
-
-            },),
+            WorkerInfo( name: 'Issa Ali', service: 'plumber', location: 'Amman', rating: 4.5
+            //   ,onTap: (){
+            //   Navigator.of(context).push(
+            //       MaterialPageRoute(
+            //           builder: (context) =>BookingPage()
+            //       ));
+            //
+            // },
+            ),
                   SizedBox(width: 3.w,),
                   WorkerInfo(name: 'Issa Ali', service: 'plumber', location: 'Amman', rating: 4.5),
 

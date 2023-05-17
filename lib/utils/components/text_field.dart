@@ -6,10 +6,10 @@ import '../app_colors.dart';
 class CusTextField extends StatefulWidget {
   final String labelText;
   final bool isPassword;
-  final VoidCallback? onChanged;
+  final TextEditingController? inputController;
   final validator;
 
-  const CusTextField({Key? key,required this.labelText,required this.isPassword,this.onChanged,required this.validator}) : super(key: key);
+   CusTextField({Key? key,required this.labelText,required this.isPassword,required this.inputController,required this.validator}) : super(key: key);
 
   @override
   State<CusTextField> createState() => _CusTextFieldState();
@@ -22,7 +22,7 @@ class _CusTextFieldState extends State<CusTextField> {
       padding: EdgeInsets.all(1.h),
       child: TextFormField(
         validator:
-          widget.validator,
+          widget.validator,controller: widget.inputController,
 
         obscureText: widget.isPassword,
         style: TextStyle(color: AppColors().primaryColor),
@@ -35,12 +35,7 @@ class _CusTextFieldState extends State<CusTextField> {
           labelStyle: TextStyle(color: AppColors().primaryColor),
           suffixIcon: widget.isPassword? Icon(Icons.remove_red_eye_outlined,color: AppColors().primaryColor):Icon(Icons.email_outlined,color: AppColors().primaryColor,)
         ),
-        onChanged: (val){
 
-          if (widget.onChanged != null) {widget.onChanged!.call();
-
-          };
-        },
       ),
     );
   }
